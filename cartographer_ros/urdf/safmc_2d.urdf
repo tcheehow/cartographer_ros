@@ -22,15 +22,15 @@
     <color rgba="0.2 0.2 0.2 1" />
   </material>
 
-  <!--link name="imu_link">
+  <link name="imu_link">
     <visual>
       <origin xyz="0 0 0" />
       <geometry>
-        <box size="0.06 0.04 0.02" />
+        <box size="0.00 0.00 0.00" />
       </geometry>
       <material name="orange" />
     </visual>
-  </link-->
+  </link>
 
   <link name="rplidar_link">
     <visual>
@@ -44,15 +44,15 @@
 
   <link name="base_link" />
 
-  <!--joint name="imu_link_joint" type="fixed">
+  <joint name="imu_link_joint" type="fixed">
     <parent link="base_link" />
     <child link="imu_link" />
     <origin rpy="0 0 0" xyz="0 0 0" />
-  </joint-->
+  </joint>
 
   <joint name="rplidar_link_joint" type="fixed">
     <parent link="base_link" />
     <child link="rplidar_link" />
-    <origin rpy="0 0 1.57008" xyz="0 0 0" />
+    <origin rpy="0 0 1.57" xyz="0 0 0" />
   </joint>
 </robot>
